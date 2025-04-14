@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.topnav {
+    top: 0px;
+    background-color: #006A71;
+    color: yellow;
+    height: 125px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+h1{
+     font-family: Arial, san-serif;
+     font-size: 50px;
+}
+body {
+    text-align: center;
+    padding-top: 80px;
+}
+img {
+    width: 284px;
+}
+
+.games {
+    color: white;
+}
+.home {
+     color: white;
+ }
+.opinions {
+    color: white;
+}
+.media {
+    color: white;
+}
+
+
+a {
+    position: relative;
+    /* Remove top positioning since we're using flex centering */
+    font-size: 30px;
+    margin: 0 10px;
+    /* Adjust padding to be mostly horizontal */
+    padding: 0 20px;
+    /* Make the height match the navbar */
+    height: 125px;
+    /* Center text vertically */
+    line-height: 70px;
+    /* Add these to make the element block-level and properly sized */
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Noto Sans, sans-serif;
+
+}
+
+a:hover {
+    background-color: #003438;
+}
+.on {
+    background-color: #003438;
+}
+
+
+button {
+    width: 250px;
+    height: 50px;
+    background-color: #006A71;
+}
+
+/* Your existing CSS first */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .topnav {
+    height: 60px; /* Slightly smaller nav bar on mobile */
+  }
+
+  a {
+    font-size: 20px; /* Smaller font */
+    padding: 0 10px; /* Less horizontal padding */
+    margin: 0 5px; /* Smaller margins */
+    height: 60px; /* Match the new nav height */
+    line-height: 60px; /* Keep text vertically centered */
+  }
+}
+
+/* For even smaller screens like phones */
+@media screen and (max-width: 480px) {
+  .topnav {
+    flex-direction: column; /* Stack nav items vertically */
+    height: auto; /* Let height adjust to content */
+    padding: 10px 0;
+  }
+
+  a {
+    display: block; /* Make links full width */
+    height: 50px; /* Shorter height per item */
+    line-height: 50px;
+    margin: 5px 0; /* Vertical spacing between items */
+    width: 100%; /* Full width */
+  }
+
+  button {
+    width: 90%; /* Make buttons slightly smaller than screen */
+    max-width: 400px;
+  }
+
+  img {
+    width: 80%; /* Make images responsive */
+    max-width: 284px;
+  }
+}
+
+
+/* Add this to your CSS */
+main,
+section,
+.content {
+    margin-top: 80px; /* Slightly more than your navbar height */
+}
+
+/* For mobile */
+@media screen and (max-width: 768px) {
+    main,
+    section,
+    .content {
+        margin-top: 70px; /* Adjust for smaller navbar on mobile */
+    }
+}
+
+/* For smallest screens with the vertical menu */
+@media screen and (max-width: 480px) {
+    main,
+    section,
+    .content {
+        margin-top: 240px; /* Adjust based on your vertical menu total height */
+    }
+}

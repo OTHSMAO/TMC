@@ -6,7 +6,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, sans-serif;
             background-color: #9ACBD0;
             margin: 0;
             padding: 0;
@@ -29,10 +29,11 @@
             height: 75px;
             width: auto;
             margin-right: 15px;
+            cursor: pointer;
         }
 
         .topnav a {
-            color: #white;
+            color: white;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -50,7 +51,6 @@
         /* Title section */
         .title-section {
             background-color: #9ACBD0;
-            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -115,6 +115,28 @@
 
         .blue-section a:hover {
             background-color: #48A6A7;
+        }
+
+        .yellow-section {
+            background-color: #f0c85b;
+            border-color: #000;
+            border-style: solid;
+            border-width: 2px;
+            color: #000;
+            padding: 1px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .yellow-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
 
         /* Responsive adjustments */
@@ -186,7 +208,7 @@
 
 <body>
     <div class="topnav">
-        <img src="TMC_Logo.png" alt="TMC - Tompkins Math Contest">
+        <img src="TMC_Logo.png" alt="TMC - Tompkins Math Contest" onclick="location.href='index.html'">
         <a class="home" href="index.html">Home</a>
         <a class="games" href="page2.html">About Us</a>
         <a class="opinions" href="page3.html">Sign Up</a>
@@ -208,6 +230,15 @@
                 <br>
                 <p>The contest is meant to challenge the critical thinking skills of Junior High students, while also testing their abilites in applying the math formulas they have learned in their previous math classes.</p>
             </div>
+
+
+            <div class="yellow-section" onclick="location.href='page2.html'">
+                <h2>Learn about our Team!</h2>
+            </div>
+
+            <div class="yellow-section" onclick="location.href='page4.html'">
+                <h2>Learn about our Sponsors!</h2>
+            </div>
         </section>
 
         <!-- Blue content section -->
@@ -216,7 +247,12 @@
             <div class="section-content">
                 <p>Participating in this contest is an excellent way for junior high students to challenge themselves mathematically and prepare for advanced high school coursework. High scores and awards earned in this competition can significantly enhance a student's academic profile and create opportunities for future recognition. This contest gives students the ability to improve their problem-solving skills while competing against peers and gaining resume-worthy achievements.</p>
             </div>
-            <a href="page3.html">Go to Sign Up!</a>
+
+
+            <div class="yellow-section" onclick="location.href='page3.html'">
+                <h2>Sign up for TMC!</h2>
+            </div>
+            
         </section>
     </div>
 

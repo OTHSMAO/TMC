@@ -25,6 +25,14 @@
             padding: 10px 20px;
         }
 
+        /* Target only the yellow button's link */
+        .title-section a:hover,
+        .title-section a:focus,
+        .title-section a:active {
+            background-color: transparent !important;
+            text-decoration: none !important;
+        }
+
         .topnav img {
             height: 75px;
             width: auto;
@@ -41,6 +49,8 @@
 
         .topnav a:hover {
             color: #9ACBD0;
+            background-color: #006A71 !important;
+            text-decoration: none !important;
         }
 
         /* Main content container */
@@ -116,15 +126,45 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            min-height: 60px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+    }
+
+        .yellow-section h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 28px;
+            color: #333;
+            line-height: 1.2;
         }
 
         .yellow-section:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
+          /* Tablet-sized screens */
+        @media screen and (max-width: 768px) {
+            .yellow-section {
+            max-width: 90%;
+            padding: 15px;
+        }
+
+        .yellow-section h1 {
+            font-size: 24px;
+        }
+  }
+
+        /* Phone-sized screens */
+      @media screen and (max-width: 480px) {
+        .yellow-section {
+            max-width: 95%;
+            padding: 12px 8px;
+        }
+
+        .yellow-section h1 {
+            font-size: 20px;
+        }
+  }
 
         /* Responsive adjustments */
         @media screen and (max-width: 768px) {
@@ -138,7 +178,7 @@
             }
 
             .title-section img {
-                width: 200px; /* Medium size for tablets */
+                width: 200px;
             }
 
             .title-section h1 {
@@ -211,8 +251,10 @@
                 <p>Click the button below to access the signup site. Shortly after signing up, an email will be sent to the provided email, where we will provide further instructions.</p>
             </div>
             <br>
-            <a href="https://forms.gle/VTTM7H1KN1iZCxCp8" target="_blank" rel="noopener noreferrer" class="yellow-section" style="display: block; text-decoration: none;">
-                <h1>Click me to Register!</h1>
+            <a href="https://forms.gle/VTTM7H1KN1iZCxCp8" target="_blank" rel="noopener noreferrer" style="text-decoration: none;width: 80%; max-width: 1000px; margin: 10px auto;">
+                <div class="yellow-section">
+                    <h1>Click me to Register!</h1>
+                </div>
             </a>
         </section>
 

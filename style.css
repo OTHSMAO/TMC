@@ -43,7 +43,6 @@ img {
 
 a {
     position: relative;
-    /* Remove top positioning since we're using flex centering */
     font-size: 30px;
     margin: 0 10px;
     /* Adjust padding to be mostly horizontal */
@@ -60,12 +59,7 @@ a {
 
 }
 
-a:hover {
-    background-color: #003438;
-}
-.on {
-    background-color: #003438;
-}
+
 
 
 button {
@@ -74,7 +68,7 @@ button {
     background-color: #006A71;
 }
 
-/* Your existing CSS first */
+
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
@@ -119,11 +113,10 @@ button {
 }
 
 
-/* Add this to your CSS */
 main,
 section,
 .content {
-    margin-top: 80px; /* Slightly more than your navbar height */
+    margin-top: 80px;
 }
 
 /* For mobile */
@@ -140,6 +133,6 @@ section,
     main,
     section,
     .content {
-        margin-top: 240px; /* Adjust based on your vertical menu total height */
+        margin-top: 240px; /* Adjust based on vertical menu total height */
     }
 }
